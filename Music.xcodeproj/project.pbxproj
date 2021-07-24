@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACA81BEA26A9972A00A4279A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA81BE926A9972A00A4279A /* Track.swift */; };
+		ACA81BEC26A99A0900A4279A /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA81BEB26A99A0900A4279A /* TrackCell.swift */; };
+		ACA81BEE26A99B0900A4279A /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA81BED26A99B0900A4279A /* AlbumCell.swift */; };
+		ACA81BF026A99DF800A4279A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA81BEF26A99DF800A4279A /* Constants.swift */; };
+		ACA81BF226A9B67E00A4279A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA81BF126A9B67E00A4279A /* AlbumViewController.swift */; };
 		ACB5B436269D8AAF00930915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5B435269D8AAF00930915 /* AppDelegate.swift */; };
 		ACB5B438269D8AAF00930915 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5B437269D8AAF00930915 /* SceneDelegate.swift */; };
 		ACB5B43A269D8AAF00930915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5B439269D8AAF00930915 /* ViewController.swift */; };
 		ACB5B43D269D8AAF00930915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB5B43B269D8AAF00930915 /* Main.storyboard */; };
 		ACB5B43F269D8AB100930915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5B43E269D8AB100930915 /* Assets.xcassets */; };
 		ACB5B442269D8AB100930915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB5B440269D8AB100930915 /* LaunchScreen.storyboard */; };
+		ACB5B44A26A03BCC00930915 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5B44926A03BCC00930915 /* ItunesConnection.swift */; };
+		ACB5B44C26A1889D00930915 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5B44B26A1889D00930915 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ACA81BE926A9972A00A4279A /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		ACA81BEB26A99A0900A4279A /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		ACA81BED26A99B0900A4279A /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		ACA81BEF26A99DF800A4279A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACA81BF126A9B67E00A4279A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		ACB5B432269D8AAF00930915 /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB5B435269D8AAF00930915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB5B437269D8AAF00930915 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		ACB5B43E269D8AB100930915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB5B441269D8AB100930915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACB5B443269D8AB100930915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB5B44926A03BCC00930915 /* ItunesConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
+		ACB5B44B26A1889D00930915 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACA81BE626A98A0E00A4279A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5B43B269D8AAF00930915 /* Main.storyboard */,
+				ACA81BED26A99B0900A4279A /* AlbumCell.swift */,
+				ACA81BEB26A99A0900A4279A /* TrackCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACA81BE726A98A1800A4279A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5B439269D8AAF00930915 /* ViewController.swift */,
+				ACA81BF126A9B67E00A4279A /* AlbumViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACA81BE826A98A3600A4279A /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5B43E269D8AB100930915 /* Assets.xcassets */,
+				ACB5B435269D8AAF00930915 /* AppDelegate.swift */,
+				ACB5B437269D8AAF00930915 /* SceneDelegate.swift */,
+				ACB5B440269D8AB100930915 /* LaunchScreen.storyboard */,
+				ACB5B443269D8AB100930915 /* Info.plist */,
+				ACA81BEF26A99DF800A4279A /* Constants.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		ACA81BF526AC7E9600A4279A /* Itunes */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5B44926A03BCC00930915 /* ItunesConnection.swift */,
+			);
+			path = Itunes;
+			sourceTree = "<group>";
+		};
 		ACB5B429269D8AAF00930915 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +110,22 @@
 		ACB5B434269D8AAF00930915 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				ACB5B435269D8AAF00930915 /* AppDelegate.swift */,
-				ACB5B437269D8AAF00930915 /* SceneDelegate.swift */,
-				ACB5B439269D8AAF00930915 /* ViewController.swift */,
-				ACB5B43B269D8AAF00930915 /* Main.storyboard */,
-				ACB5B43E269D8AB100930915 /* Assets.xcassets */,
-				ACB5B440269D8AB100930915 /* LaunchScreen.storyboard */,
-				ACB5B443269D8AB100930915 /* Info.plist */,
+				ACA81BF526AC7E9600A4279A /* Itunes */,
+				ACA81BE826A98A3600A4279A /* Supporting files */,
+				ACA81BE726A98A1800A4279A /* Controller */,
+				ACA81BE626A98A0E00A4279A /* View */,
+				ACB5B44D26A188D000930915 /* Model */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		ACB5B44D26A188D000930915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5B44B26A1889D00930915 /* Album.swift */,
+				ACA81BE926A9972A00A4279A /* Track.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA81BEC26A99A0900A4279A /* TrackCell.swift in Sources */,
 				ACB5B43A269D8AAF00930915 /* ViewController.swift in Sources */,
+				ACA81BF026A99DF800A4279A /* Constants.swift in Sources */,
+				ACB5B44A26A03BCC00930915 /* ItunesConnection.swift in Sources */,
+				ACA81BEE26A99B0900A4279A /* AlbumCell.swift in Sources */,
 				ACB5B436269D8AAF00930915 /* AppDelegate.swift in Sources */,
+				ACA81BF226A9B67E00A4279A /* AlbumViewController.swift in Sources */,
 				ACB5B438269D8AAF00930915 /* SceneDelegate.swift in Sources */,
+				ACB5B44C26A1889D00930915 /* Album.swift in Sources */,
+				ACA81BEA26A9972A00A4279A /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWNR5M53QM;
-				INFOPLIST_FILE = Music/Info.plist;
+				INFOPLIST_FILE = "Music/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = as.Music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWNR5M53QM;
-				INFOPLIST_FILE = Music/Info.plist;
+				INFOPLIST_FILE = "Music/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = as.Music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
