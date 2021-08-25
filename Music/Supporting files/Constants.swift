@@ -7,8 +7,10 @@
 
 import Foundation
 
-let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&limit=100&term="
-let ALBUM_URL = "https://itunes.apple.com/lookup?entity=song&id="
-let cellId = "cell"
-let albumId = "AlbumViewController"
-let trackId = "TrackCell"
+enum Constans: String {
+    case BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&limit=100&term="
+    case ALBUM_URL = "https://itunes.apple.com/lookup?entity=song&id="
+    case cellId = "cell"
+    case albumId = "AlbumViewController"
+    case trackId = "TrackCell"
+}

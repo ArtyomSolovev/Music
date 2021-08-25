@@ -82,7 +82,7 @@ extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: trackId, for: indexPath) as? TrackCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Constans.trackId.rawValue, for: indexPath) as? TrackCell {
             cell.updateCell(track: tracks[indexPath.row])
             return cell
         }

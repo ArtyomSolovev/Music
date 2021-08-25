@@ -35,7 +35,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? AlbumCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constans.cellId.rawValue, for: indexPath) as? AlbumCell {
             cell.updateCell(album: albums[indexPath.row])
             return cell
         }
@@ -43,7 +43,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(identifier: albumId) as! AlbumViewController
+        let vc = storyboard?.instantiateViewController(identifier: Constans.albumId.rawValue) as! AlbumViewController
         vc.album = albums[indexPath.row]
         if let cell = collectionView.cellForItem(at: indexPath) as? AlbumCell {
             vc.image = cell.albumImage.image

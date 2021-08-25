@@ -14,7 +14,7 @@ class ItunesConnection {
     func getAlbums (searchRequest: String, complition: @escaping ([Album])->()) {
         var albums = [Album]()
         let searchString = searchRequest.replacingOccurrences(of: " ", with: "+")
-        let url = URL(string: "\(BASE_URL)\(searchString)")
+        let url = URL(string: "\(Constans.BASE_URL.rawValue)\(searchString)")
         let session = URLSession.shared
         session.dataTask(with: url!) { (data, response, error) in
             if let data = data {
@@ -49,7 +49,7 @@ class ItunesConnection {
     
     func getAlbumTracks (collectionId: Int, complition: @escaping ([Track]) -> ()) {
         var tracks = [Track]()
-        let url = URL(string: "\(ALBUM_URL)\(collectionId)")
+        let url = URL(string: "\(Constans.ALBUM_URL.rawValue)\(collectionId)")
         let session = URLSession.shared
         session.dataTask(with: url!) { (data, response, error) in
             if let data = data {
